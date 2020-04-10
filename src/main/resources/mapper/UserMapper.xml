@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ethan.auth.mapper.UserMapper">
+
+
+    <!-- 根据id获取非敏感用户信息-->
+    <select id="selectByName" resultType="com.ethan.auth.entity.SysUser">
+        SELECT *
+        FROM sys_user
+        WHERE user_name=#{userName}
+    </select>
+
+
+
+
+
+</mapper>
